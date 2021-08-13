@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1a19;
+  background-image: url(./images/bgimg.png);
+  background-repeat: no-repeat;
+  background-position: 100% -70%;
+}
+
 .site-header {
   background-color: #3c3a39;
   display: flex;
@@ -21,18 +33,6 @@
 .site-header .nav-menu img {
   height: 26px;
   width: 26px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1c1a19;
-  background-image: url(./images/bgimg.png);
-  background-repeat: no-repeat;
-  background-position: 100% -70%;
 }
 
 .container {
@@ -78,7 +78,7 @@ body {
 .container .icon {
   display: flex;
   justify-content: flex-start;
-  margin-left: -20%;
+  margin-left: -26%;
   margin-top: 20px;
 }
 

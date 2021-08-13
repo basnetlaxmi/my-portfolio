@@ -1,7 +1,6 @@
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# my-portfolio
+# My Portfolio
 
 > This is my second project in the Microverse in which I built my portfolio . This is the very first step project for the portfolio. The objective was to build template from figma by using CSS Flexbox. For that I created my-portfolio repo and cloned into my local machine. For best practices I have implemented linter,Github Flow and professional documentation as much as I can. For the reference, you can click [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27) to look at the template I chose.
 
@@ -10,9 +9,9 @@
 
 ## Built With
 
-- html,css
-- Linters,Markdown
-- Github Flow 
+- HTML, CSS
+- Linters, Markdown
+- GitHub Flow 
 
 ## Getting Started
 
@@ -24,9 +23,10 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Prerequisites
--code editor
 
--git and github
+- Code editor
+
+- Git and Github
 
 ## Author
 
