@@ -44,7 +44,7 @@ body {
   background-image: url(./images/bgimg.png);
   background-repeat: no-repeat;
   background-position: 100% 70%;
-  }
+}
 
 .container h1 {
   font-family: 'Crete Round', serif;
@@ -81,6 +81,16 @@ body {
   margin-left: -26%;
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+.about .list li {
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  list-style-type: none;
+  margin-top: 15px;
 }
 
 .container .icon ul li {
@@ -126,6 +136,16 @@ body {
   flex-direction: column;
   width: 386px;
   align-items: flex-start;
+}
+
+.about h2 {
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 24px 0;
 }
 
 .work-container .feature-project h2 {
@@ -184,6 +204,17 @@ body {
   width: 100px;
 }
 
+.about a {
+  background: #ff6b00;
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+}
+
 .work-container .feature-project a {
   background: #ff6b00;
   font-family: "Inter", serif;
@@ -213,16 +244,6 @@ body {
   color: #fff;
   height: 386px;
   justify-content: flex-end;
-}
-
-.about h2 {
-  font-family: "Crete Round", serif;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  margin: 24px 0;
 }
 
 .work-container .projects .project h2 {
@@ -288,17 +309,6 @@ body {
   margin-top: 100px;
 }
 
-.about a {
-  background: #ff6b00;
-  font-family: "Inter", serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #fff;
-  padding: 12px;
-}
-
 .about .list {
   display: flex;
   flex-direction: column;
@@ -336,16 +346,6 @@ body {
   line-height: 44px;
   color: #fff;
   margin-top: 20px;
-}
-
-.about .list li {
-  font-family: "Inter", serif;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  color: #fff;
-  list-style-type: none;
-  margin-top: 15px;
 }
 
 .about .list img.square-icon {
