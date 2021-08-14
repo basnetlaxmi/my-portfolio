@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
@@ -181,12 +181,12 @@ body {
   height: 147px;
 }
 
-.work-container .feature-project .languages {
+.work-container .feature-project .languages ul {
   display: flex;
   flex-direction: row;
 }
 
-.work-container .feature-project .languages .language {
+.work-container .feature-project .languages ul li {
   padding: 10px 12px;
   background: #fff;
   border: 1px solid #8993a4;
@@ -200,7 +200,7 @@ body {
   width: 60px;
 }
 
-.work-container .feature-project .languages .language:nth-child(3) {
+.work-container .feature-project .languages .bootstrap {
   width: 100px;
 }
 
@@ -266,7 +266,8 @@ body {
   padding: 0 12px;
 }
 
-.work-container .projects .project .languages {
+.work-container .projects .project .languages ul {
+  display: flex;
   justify-content: flex-start;
 }
 
