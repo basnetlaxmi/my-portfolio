@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-  background-color: #1c1a19;
-  background-image: url(./images/bgimg.png);
-  background-repeat: no-repeat;
-  background-position: 100% -70%;
+  position: relative;
 }
 
 .site-header {
@@ -21,13 +23,11 @@ body {
 .site-header a {
   font-family: 'Roboto', serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  text-decoration: none;
 }
 
 .site-header .nav-menu img {
@@ -40,12 +40,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  background-color: #1c1a19;
+  background-image: url(./images/bgimg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
 }
 
 .container h1 {
   font-family: 'Crete Round', serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 50px;
   line-height: 64px;
@@ -56,7 +58,6 @@ body {
 
 .container h3 {
   font-family: 'Roboto', serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
@@ -66,7 +67,6 @@ body {
 
 .container p {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -80,6 +80,17 @@ body {
   justify-content: flex-start;
   margin-left: -26%;
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.about .list li {
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  list-style-type: none;
+  margin-top: 15px;
 }
 
 .container .icon ul li {
@@ -91,4 +102,255 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 50px;
+}
+
+.work-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 327px;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 102px;
+}
+
+.work-container h1.title {
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  text-align: center;
+}
+
+.work-container h1.title::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 327px;
+  height: 1px;
+  margin: 30px 0 52px;
+}
+
+.work-container .feature-project {
+  display: flex;
+  flex-direction: column;
+  width: 386px;
+  align-items: flex-start;
+}
+
+.about h2 {
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 24px 0;
+}
+
+.work-container .feature-project h2 {
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin: 12px 0;
+}
+
+.about p {
+  position: static;
+  width: 327px;
+  height: 148px;
+  left: 24px;
+  top: 223px;
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin: 24px 0;
+}
+
+.work-container .feature-project p {
+  font-family: "Inter", serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  width: 327px;
+  height: 147px;
+}
+
+.work-container .feature-project .languages ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-container .feature-project .languages ul li {
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  margin-right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  width: 60px;
+}
+
+.work-container .feature-project .languages .bootstrap {
+  width: 100px;
+}
+
+.about a {
+  background: #ff6b00;
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+}
+
+.work-container .feature-project a {
+  background: #ff6b00;
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+.work-container .projects {
+  display: grid;
+  grid-template-columns: 320px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.work-container .projects .project {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./images/prjimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  color: #fff;
+  height: 386px;
+  justify-content: flex-end;
+}
+
+.work-container .projects .project h2 {
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 5px;
+  padding-left: 12px;
+}
+
+.work-container .projects .project p {
+  font-family: Inter, serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+
+.work-container .projects .project .languages ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.work-container .projects .project .languages .project-language {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  margin: 0 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.work-container .projects .project .languages .project-language:nth-child(1) {
+  margin-left: 12px;
+}
+
+.work-container .projects .project a.project-btn {
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #ff6b00;
+  margin-top: 15px;
+  padding: 7px;
+}
+
+.about {
+  background-color: #1c1a19;
+  background-image: url('./images/bgimgabt.png');
+  background-repeat: no-repeat;
+  background-position: 100% 24%;
+  padding: 75px 0;
+  margin-top: 100px;
+}
+
+.about .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -120px;
+  text-align: center;
+}
+
+.about .description {
+  padding-left: 24px;
+  height: 725px;
+  position: relative;
+}
+
+.about .description::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 327px;
+  height: 1px;
+  position: absolute;
+  bottom: 160px;
+}
+
+.about .list img.rectangle-icon {
+  height: 15px;
+  width: 15px;
+  margin: 0 7px;
+}
+
+.about .list h3 {
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.about .list img.square-icon {
+  width: 12px;
+  height: 12px;
+  margin: 0 12px;
 }
