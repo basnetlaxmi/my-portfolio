@@ -359,16 +359,11 @@ body {
   border: none;
 }
 
-.form form hr {
-  width: auto;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  border: 2px solid red;
   margin: 24px;
 }
 
@@ -377,9 +372,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 33px;
   line-height: 44px;
-  text-align: center;
   color: #172b4d;
   margin: 100px 0 60px;
 }
@@ -392,21 +386,45 @@ body {
   line-height: 24px;
   color: #979493;
   padding: 1vw;
-  margin-top: 2vw;
+  margin-top: 10vw;
+  width: 95%;
 }
 
 .form form textarea {
-  margin-top: 2vw;
+  margin-top: 8vw;
   padding: 1vw;
-  width: 327px;
+  width: 315px;
   height: 114px;
+}
+
+#sub-btn {
+  background: #ff6b00;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  width: 131px;
+  padding: 12px;
+  margin: 24px 98px;
 }
 
 footer .icon ul {
   display: flex;
-  width: 100%;\\
+  width: 100%;
+  justify-content: center;
 }
 
 footer .icon li {
   margin: 2vw;
+}
+
+footer .icon li img {
+  color: #505f79;
+}
+
+footer .dot {
+  margin-left: 121px;
 }
