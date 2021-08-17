@@ -354,3 +354,11 @@ body {
   height: 12px;
   margin: 0 12px;
 }
+
+.form form input {
+  border: none;
+ }
+
+ .form form hr{
+  width: 327PX;
+ }
