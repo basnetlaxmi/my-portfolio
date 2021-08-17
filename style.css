@@ -357,8 +357,56 @@ body {
 
 .form form input {
   border: none;
- }
+}
 
- .form form hr{
-  width: 327PX;
- }
+.form form hr {
+  width: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid red;
+  margin: 24px;
+}
+
+.form h3 {
+  text-align: center;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 100px 0 60px;
+}
+
+.form form input {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  padding: 1vw;
+  margin-top: 2vw;
+}
+
+.form form textarea {
+  margin-top: 2vw;
+  padding: 1vw;
+  width: 327px;
+  height: 114px;
+}
+
+footer .icon ul {
+  display: flex;
+  width: 100%;\\
+}
+
+footer .icon li {
+  margin: 2vw;
+}
