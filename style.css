@@ -30,6 +30,10 @@ body {
   color: #fff;
 }
 
+footer .icon li img {
+  color: #505f79;
+}
+
 .site-header .nav-menu img {
   height: 26px;
   width: 26px;
@@ -81,6 +85,10 @@ body {
   margin-left: -26%;
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+footer .icon li {
+  margin: 2vw;
 }
 
 .about .list li {
@@ -179,6 +187,12 @@ body {
   color: #091e42;
   width: 327px;
   height: 147px;
+}
+
+footer .icon ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .work-container .feature-project .languages ul {
@@ -340,6 +354,17 @@ body {
   margin: 0 7px;
 }
 
+.form h3 {
+  text-align: center;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 100px 0 60px;
+}
+
 .about .list h3 {
   font-family: "Inter", serif;
   font-weight: bold;
@@ -353,4 +378,70 @@ body {
   width: 12px;
   height: 12px;
   margin: 0 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 24px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form form input {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  padding: 1vw;
+  margin-top: 10vw;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form form textarea {
+  margin-top: 8vw;
+  padding: 1vw;
+  border: none;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  background: #fbf8f7;
+}
+
+#sub-btn {
+  background: #ff6b00;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  width: 131px;
+  padding: 12px;
+  margin: 24px 98px 100px;
+}
+
+footer .dot {
+  margin-left: 121px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #979493;
+}
+
+textarea::placeholder {
+  color: #3c3a39;
 }
