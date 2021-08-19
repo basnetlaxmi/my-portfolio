@@ -34,6 +34,10 @@ footer .icon li img {
   color: #505f79;
 }
 
+.site-header .nav-menu .menu-list {
+  display: none;
+}
+
 .site-header .nav-menu img {
   height: 26px;
   width: 26px;
@@ -48,6 +52,8 @@ footer .icon li img {
   background-image: url(./images/bgimg.png);
   background-repeat: no-repeat;
   background-position: 100% 70%;
+  position: relative;
+  height: 700px;
 }
 
 .container h1 {
@@ -121,7 +127,7 @@ footer .icon li {
   margin-top: 102px;
 }
 
-.work-container h1.title {
+.work-container h2.title {
   font-family: "Crete Round", serif;
   font-weight: normal;
   font-size: 40px;
@@ -130,7 +136,7 @@ footer .icon li {
   text-align: center;
 }
 
-.work-container h1.title::after {
+.work-container h2.title::after {
   content: "";
   display: block;
   background-color: black;
@@ -444,4 +450,81 @@ textarea::placeholder {
 
 textarea::placeholder {
   color: #3c3a39;
+}
+
+@media (min-width: 991.99px) {
+  .container .icon ul {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .container .icon {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -90%;
+    position: absolute;
+    margin-top: -133px;
+  }
+
+  .container h1 {
+    font-size: 72px;
+    line-height: 81.5px;
+    width: 460px;
+    overflow-y: hidden;
+  }
+
+  .site-header .nav-menu .menu-list {
+    display: flex;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+  } 
+  .site-header .nav-menu .menu-list li {
+    margin: 10px;
+  }
+
+  .site-header .nav-menu .icon {
+    display: none;
+  }
+
+  .text {
+    margin-right: 73px;
+  }
+
+  .container h3 {
+    font-family: "Inter", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  .container p {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    overflow-y: hidden;
+    line-height: 32px;
+    height: 123px;
+    width: 556px;
+  }
+  .container {
+    background-position: 100% 105%;
+    background-image: url(./images/bgimgdesk.svg);
+    background-repeat: no-repeat;
+    background-size: 450px 800px;
+
+  }
+
+  .site-header {
+      height: 72px;
+  }
+   .work-container {
+     justify-content: flex-start;
+   }
+
+  
 }
