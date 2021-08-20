@@ -10,7 +10,7 @@ a {
 
 body {
   position: relative;
-}
+  }
 
 .site-header {
   background-color: #3c3a39;
@@ -54,6 +54,7 @@ footer .icon li img {
   background-position: 100% 70%;
   position: relative;
   height: 700px;
+  
 }
 
 .container h1 {
@@ -64,7 +65,9 @@ footer .icon li img {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 12px 0;
-}
+  animation-name: slide;
+  animation-duration: 4s ;
+  }
 
 .container h3 {
   font-family: 'Roboto', serif;
@@ -466,7 +469,7 @@ footer {
   flex-direction: column;
 }
 
-@media (min-width: 991.99px) {
+@media (min-width: 992px) {
   .container .icon ul {
     display: flex;
     flex-direction: column;
@@ -696,4 +699,17 @@ footer {
     width: 1150px;
     margin: 120px auto;
   }
+}
+
+@keyframes slide {
+
+  from {
+    margin-top: 100%;
+    
+   }
+   to {
+     margin-top: 0%;
+     
+   }
+
 }
