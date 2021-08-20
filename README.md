@@ -2,10 +2,10 @@
 
 # My Portfolio
 
-> This is my second project in the Microverse in which I built my portfolio . This is the step for the contact form. The objective was to build template from figma by using CSS Flexbox. For that I created my-portfolio repo and cloned into my local machine. For best practices I have implemented linter,Github Flow and professional documentation as much as I can. For the reference, you can click [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27) to look at the template I chose.
+> This is my second project in the Microverse in which I built my portfolio . This is my responsive desktop version. The objective was to build template from figma by using CSS Flexbox. For that I created my-portfolio repo and cloned into my local machine. For best practices I have implemented linter,Github Flow and professional documentation as much as I can. For the reference, you can click [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27) to look at the template I chose.
 
-![screenshot1](./screenshot/screenshot8.PNG)
-![screenshot2](./screenshot/screenshot9.PNG)
+![screenshot](./screenshot/desktop-version.png)
+
 
 
 
