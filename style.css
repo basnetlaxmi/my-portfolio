@@ -88,9 +88,9 @@ footer .icon li img {
 .container .icon {
   display: flex;
   justify-content: flex-start;
-  margin-left: -26%;
   margin-top: 20px;
   margin-bottom: 60px;
+  width: 81%;
 }
 
 footer .icon li {
@@ -114,7 +114,6 @@ footer .icon li {
 
 .text {
   width: 80%;
-  margin: auto;
   margin-top: 50px;
 }
 
@@ -150,6 +149,10 @@ footer .icon li {
   flex-direction: column;
   width: 386px;
   align-items: flex-start;
+}
+
+.work-container .text-work {
+  overflow-y: hidden;
 }
 
 .about h2 {
@@ -193,6 +196,14 @@ footer .icon li {
   color: #091e42;
   width: 327px;
   height: 147px;
+}
+
+.work-container .feature-project .phimg {
+  width: 327px;
+}
+
+.work-container .feature-project .phimg img {
+  width: 100%;
 }
 
 footer .icon ul {
@@ -245,6 +256,7 @@ footer .icon ul {
   color: #fff;
   margin: 10px 0;
   padding: 12px;
+  display: inline-block;
 }
 
 .work-container .projects {
@@ -252,6 +264,7 @@ footer .icon ul {
   grid-template-columns: 320px;
   justify-content: flex-end;
   align-items: center;
+
 }
 
 .work-container .projects .project {
@@ -334,12 +347,11 @@ footer .icon ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -120px;
   text-align: center;
 }
 
 .about .description {
-  padding-left: 24px;
+  padding-left: 7vw;
   height: 725px;
   position: relative;
 }
@@ -348,10 +360,10 @@ footer .icon ul {
   content: "";
   display: block;
   background-color: #fff;
-  width: 327px;
+  width: 80%;
   height: 1px;
   position: absolute;
-  bottom: 160px;
+  bottom: 125px;
 }
 
 .about .list img.rectangle-icon {
@@ -431,11 +443,6 @@ footer .icon ul {
   padding: 12px;
   margin: 24px 98px 100px;
 }
-
-footer .dot {
-  margin-left: 121px;
-}
-
 input::placeholder,
 textarea::placeholder {
   font-family: "Inter", serif;
@@ -452,18 +459,29 @@ textarea::placeholder {
   color: #3c3a39;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
 @media (min-width: 991.99px) {
+
   .container .icon ul {
     display: flex;
     flex-direction: column;
   }
 
+  footer .dot {
+    display: none;
+  }
+
   .container .icon {
     display: flex;
     justify-content: flex-start;
-    margin-left: -90%;
     position: absolute;
-    margin-top: -133px;
+    left: 26px;
+    
   }
 
   .container h1 {
@@ -492,7 +510,7 @@ textarea::placeholder {
   }
 
   .text {
-    margin-right: 73px;
+    margin-top: 0;
   }
 
   .container h3 {
@@ -513,19 +531,19 @@ textarea::placeholder {
   }
 
   .container {
-    background-position: 100% 122%;
+    background-position: 100% 25%;
     background-image: url(./images/bgimgdesk.svg);
     background-repeat: no-repeat;
-    background-size: 345px 845px;
+    height: 850px;
   }
 
   .site-header {
     height: 72px;
+    padding: 10px 100px;
   }
 
   .work-container {
     justify-content: flex-start;
-    margin-left: 140px;
     grid-template-columns: none;
   }
 
@@ -535,6 +553,13 @@ textarea::placeholder {
     justify-content: flex-end;
     align-items: center;
     column-gap: 24px;
+    margin: 0 98px;
+    row-gap: 30px;
+  }
+
+  .work-container .projects .project:nth-of-type(1) p,
+  .work-container .projects .project:nth-of-type(1) h2 {
+    display: none;
   }
 
   .work-container .projects .project:nth-of-type(1) {
@@ -543,24 +568,39 @@ textarea::placeholder {
     background-size: cover;
   }
 
-  .work-container .projects .project:nth-of-type(2) {
+  .work-container .projects .project:nth-of-type(2),
+  .work-container .projects .project:nth-of-type(5) {
     background-image: url("./images/prjimg2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .work-container .projects .project:nth-of-type(3) {
+  .work-container .projects .project:nth-of-type(3),
+  .work-container .projects .project:nth-of-type(6) {
     background-image: url("./images/prjimg3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
-    
+
   .about .description {
-    padding-left: 142px;
+    background-image: url(./images/aboutbgimg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 4%;
   }
 
   .about .list {
     flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about {
+    background-image: none;
+  }
+
+  .about .list ul {
+    margin-left: 12px;
   }
 
   .about p {
@@ -571,34 +611,109 @@ textarea::placeholder {
 
   .about .description::after {
     width: 1156px;
+    left:50% ;
+    transform: translateX(-50%);
   }
 
   .about a {
     font-size: 17px;
   }
 
-  .about {
-    background-image: url(./images/aboutbgimg.png);
-    background-repeat: no-repeat;
-    background-position: 100% 11%;
-    background-size: 291px 430px;
-  }
-
   .form {
     flex-direction: row;
-    margin: 130px 120px 40px;
+    margin:130px 75px 40px 100px;
+    
+  }
+
+  .form form {
+    align-items: center;
   }
 
   .form h3 {
+    font-size: 40px;
     line-height: 52px;
     margin-right: 26px;
     text-align: start;
-    width: 455px;
+    width: 90%;
     height: 256px;
     overflow-y: hidden;
+    margin-top: 10px;
   }
 
   .work-container .feature-project {
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .work-container h2.title::after {
+    display: inline-block;
+    width: 605px;
+    margin-bottom: 11px;
+    margin-left: 30px;
+  }
+
+  .feature-project .text-work {
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 15px;
+  }
+
+  .work-container .feature-project h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0;
+  }
+
+  .work-container .feature-project p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+  }
+
+  .work-container .feature-project .phimg {
+    width: 600px;
+  }
+
+  .work-container .feature-project .languages ul {
+    margin-bottom: 24px;
+  }
+
+  .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  }
+
+  .form form textarea {
+    margin-top: 24px;
+    width: 96%;
+    
+  }
+
+  .form form input {
+    margin-top: 15px;
+  }
+
+  #sub-btn {
+    margin: 24px 1px 154px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .work-container {
+    width: 991px;
+  }
+  .work-container h2.title::after {
+    width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .work-container {
+    width: 1150px;
+    margin: 120px auto;
   }
 }
