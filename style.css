@@ -264,7 +264,6 @@ footer .icon ul {
   grid-template-columns: 320px;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 .work-container .projects .project {
@@ -415,19 +414,20 @@ footer .icon ul {
   line-height: 24px;
   color: #979493;
   padding: 1vw;
-  margin-top: 10vw;
   width: 95%;
   border: none;
   border-bottom: 1px solid #dbd8d7;
+  margin-top: 15px;
 }
 
 .form form textarea {
-  margin-top: 8vw;
   padding: 1vw;
   border: none;
   font-family: "Inter", serif;
   font-size: 15px;
   background: #fbf8f7;
+  margin-top: 24px;
+  width: 96%;
 }
 
 #sub-btn {
@@ -441,8 +441,9 @@ footer .icon ul {
   color: #fff;
   width: 131px;
   padding: 12px;
-  margin: 24px 98px 100px;
+  margin: 24px 1px 154px;
 }
+
 input::placeholder,
 textarea::placeholder {
   font-family: "Inter", serif;
@@ -460,13 +461,12 @@ textarea::placeholder {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 @media (min-width: 991.99px) {
-
   .container .icon ul {
     display: flex;
     flex-direction: column;
@@ -481,7 +481,6 @@ footer {
     justify-content: flex-start;
     position: absolute;
     left: 26px;
-    
   }
 
   .container h1 {
@@ -547,6 +546,12 @@ footer {
     grid-template-columns: none;
   }
 
+  .about p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+  }
+
   .work-container .projects {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -603,15 +608,9 @@ footer {
     margin-left: 12px;
   }
 
-  .about p {
-    font-size: 20px;
-    line-height: 32px;
-    width: 566px;
-  }
-
   .about .description::after {
     width: 1156px;
-    left:50% ;
+    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -621,12 +620,14 @@ footer {
 
   .form {
     flex-direction: row;
-    margin:130px 75px 40px 100px;
-    
+    margin: 130px 75px 40px 100px;
   }
 
   .form form {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .form h3 {
@@ -659,13 +660,13 @@ footer {
     margin-left: 15px;
   }
 
-  .work-container .feature-project h2 {
+  .work-container .feature-project h2.project-title {
     font-size: 40px;
     line-height: 52px;
     margin-top: 0;
   }
 
-  .work-container .feature-project p {
+  .work-container .feature-project p.description {
     font-size: 20px;
     margin-bottom: 20px;
     overflow-y: hidden;
@@ -678,34 +679,13 @@ footer {
   .work-container .feature-project .languages ul {
     margin-bottom: 24px;
   }
-
-  .form form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-  }
-
-  .form form textarea {
-    margin-top: 24px;
-    width: 96%;
-    
-  }
-
-  .form form input {
-    margin-top: 15px;
-  }
-
-  #sub-btn {
-    margin: 24px 1px 154px;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
   .work-container {
     width: 991px;
   }
+
   .work-container h2.title::after {
     width: 620px;
   }
