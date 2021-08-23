@@ -64,6 +64,8 @@ footer .icon li img {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 12px 0;
+  animation-name: slide;
+  animation-duration: 4s;
 }
 
 .container h3 {
@@ -276,6 +278,7 @@ footer .icon ul {
   color: #fff;
   height: 386px;
   justify-content: flex-end;
+  transition: transform 2s;
 }
 
 .work-container .projects .project h2 {
@@ -466,7 +469,15 @@ footer {
   flex-direction: column;
 }
 
-@media (min-width: 991.99px) {
+@media (min-width: 992px) {
+  .container {
+    background-position: 100% 25%;
+    background-image: url(./images/bgimgdesk.svg);
+    background-repeat: no-repeat;
+    height: 850px;
+    overflow: hidden;
+  }
+
   .container .icon ul {
     display: flex;
     flex-direction: column;
@@ -487,7 +498,6 @@ footer {
     font-size: 72px;
     line-height: 81.5px;
     width: 460px;
-    overflow-y: hidden;
   }
 
   .site-header .nav-menu .menu-list {
@@ -529,13 +539,6 @@ footer {
     width: 556px;
   }
 
-  .container {
-    background-position: 100% 25%;
-    background-image: url(./images/bgimgdesk.svg);
-    background-repeat: no-repeat;
-    height: 850px;
-  }
-
   .site-header {
     height: 72px;
     padding: 10px 100px;
@@ -560,17 +563,7 @@ footer {
     column-gap: 24px;
     margin: 0 98px;
     row-gap: 30px;
-  }
-
-  .work-container .projects .project:nth-of-type(1) p,
-  .work-container .projects .project:nth-of-type(1) h2 {
-    display: none;
-  }
-
-  .work-container .projects .project:nth-of-type(1) {
-    background-image: url("./images/projectimg1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
   }
 
   .work-container .projects .project:nth-of-type(2),
@@ -585,6 +578,22 @@ footer {
     background-image: url("./images/prjimg3.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .work-container .projects .project:nth-of-type(1) p,
+  .work-container .projects .project:nth-of-type(1) h2 {
+    display: none;
+  }
+
+  .work-container .projects .project:nth-of-type(1) {
+    background-image: url("./images/projectimg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 2s;
+  }
+
+  .work-container .projects .project:nth-of-type(1):hover {
+    transform: scale(1.5);
   }
 
   .about .description {
@@ -695,5 +704,15 @@ footer {
   .work-container {
     width: 1150px;
     margin: 120px auto;
+  }
+}
+
+@keyframes slide {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
   }
 }

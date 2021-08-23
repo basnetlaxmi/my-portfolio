@@ -15,6 +15,9 @@
 - Linters, Markdown
 - GitHub Flow 
 
+## Live Demo
+ [Link to My Portfolio](https://basnetlaxmi.github.io/my-portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
