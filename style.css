@@ -64,7 +64,7 @@ footer .icon li img {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 12px 0;
-  overflow: ;
+  overflow-y: hidden;
 }
 
 .container h3 {
