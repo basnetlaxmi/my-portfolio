@@ -9,20 +9,37 @@
   margin: 1rem 6% 0 0;
 }
 .hamburger-page {
+  display: ;
+  color: #FFF5E1;
   background-color: #1c1a19;
-  height: 1000px;
+  height: 100vh;
   width: 100%;
-  text-decoration: none;
 }
 
 .hamb-page-elements{
   display: flex;
-  margin: 4rem 9% 0 9%;
+  margin: 5rem 9% 0 9%;
+
+}
+
+.menu-inside-hamb-page hr {
+  margin: 1rem 0 1rem 0;
+}
+
+.ul-items {
+  color: #FFF5E1;
+  text-decoration: none;
+
 }
 
 .menu-inside-hamb-page{
-  text-decoration: none;
-  list-style: none;
+  width: 100%;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+align-items: center;
 }
 
 .mainpage {
