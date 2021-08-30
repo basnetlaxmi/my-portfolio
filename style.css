@@ -4,6 +4,31 @@
   overflow-x: hidden;
 }
 
+.close-ham-img {
+  float: right;
+  margin: 1rem 6% 0 0;
+}
+.hamburger-page {
+  background-color: #1c1a19;
+  height: 1000px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.hamb-page-elements{
+  display: flex;
+  margin: 4rem 9% 0 9%;
+}
+
+.menu-inside-hamb-page{
+  text-decoration: none;
+  list-style: none;
+}
+
+.mainpage {
+
+}
+
 a {
   text-decoration: none;
 }
