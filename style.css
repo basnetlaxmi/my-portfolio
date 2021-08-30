@@ -4,6 +4,14 @@
   overflow-x: hidden;
 }
 
+/* this section won't appear in desktop*/
+@media only screen and (min-width: 992px) {
+  .hamburger-page {
+    display: none;
+  }
+
+}
+/*hamburger page section styling*/
 .close-ham-img {
   float: right;
   margin: 1rem 6% 0 0;
@@ -11,7 +19,7 @@
 .hamburger-page {
   color: #FFF5E1;
   background-color: #1c1a19;
-  height: 100vh;
+  height: 93vh;
   width: 100%;
 }
 
@@ -40,9 +48,16 @@ font-size: 32px;
 line-height: 44px;
 align-items: center;
 }
-
-.mainpage {
-
+/* black line style*/
+.blackline {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin: 2rem auto 0 auto;
+}
+/*the original main page section (js will be implemented her)*/
+.first-mainpage {
+  display: block;
 }
 
 a {
