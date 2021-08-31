@@ -4,21 +4,15 @@
   overflow-x: hidden;
 }
 
-/* this section won't appear in desktop*/
-@media only screen and (min-width: 992px) {
-  .hamburger-page {
-    display: none;
-  }
-
-}
 /*hamburger page section styling*/
 .close-ham-img {
   float: right;
   margin: 1rem 6% 0 0;
 }
 .hamburger-page {
+  display: none;
   color: #FFF5E1;
-  background-color: #1c1a19;
+  background-color: #3C3A39;
   height: 93vh;
   width: 100%;
 }
@@ -41,12 +35,12 @@
 
 .menu-inside-hamb-page{
   width: 100%;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
 }
 /* black line style*/
 .blackline {
@@ -55,10 +49,7 @@ align-items: center;
   align-content: flex-end;
   margin: 2rem auto 0 auto;
 }
-/*the original main page section (js will be implemented her)*/
-.first-mainpage {
-  display: block;
-}
+
 
 a {
   text-decoration: none;
@@ -531,6 +522,10 @@ footer {
     background-repeat: no-repeat;
     height: 850px;
     overflow: hidden;
+  }
+  
+  .blackline {
+    display: none;
   }
 
   .container .icon ul {
