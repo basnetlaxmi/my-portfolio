@@ -5,6 +5,7 @@ const hambClose = document.querySelector('.close-ham-img');
 const otherClose = document.querySelector('.menu-inside-hamb-page');
 
 makeMenuDisappear.addEventListener ('click', show);
+
 function show() {
     firstMainPage.style.display = 'none';
     hamburgerPage.style.display = 'block';
