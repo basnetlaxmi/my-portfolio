@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+.d-none {
+  display: none;
+}
+
 .site-header {
   background-color: #3c3a39;
   display: flex;
@@ -34,13 +38,19 @@ footer .icon li img {
   color: #505f79;
 }
 
-.site-header .nav-menu .menu-list {
+.site-header .nav-menu .closeMenu {
+  display: block;
   display: none;
 }
 
-.site-header .nav-menu img {
-  height: 26px;
-  width: 26px;
+.site-header .nav-menu .hamburger {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.site-header .nav-menu .menu-list {
+  display: none;
 }
 
 .container {
@@ -54,6 +64,7 @@ footer .icon li img {
   background-position: 100% 70%;
   position: relative;
   height: 700px;
+  overflow-y: hidden;
 }
 
 .container h1 {
@@ -64,8 +75,7 @@ footer .icon li img {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 12px 0;
-  animation-name: slide;
-  animation-duration: 4s;
+  overflow-y: hidden;
 }
 
 .container h3 {
@@ -278,7 +288,6 @@ footer .icon ul {
   color: #fff;
   height: 386px;
   justify-content: flex-end;
-  transition: transform 2s;
 }
 
 .work-container .projects .project h2 {
@@ -510,12 +519,16 @@ footer {
     color: #fff;
   }
 
-  .site-header .nav-menu .menu-list li {
-    margin: 10px;
+  .site-header .nav-menu .hamburger {
+    display: none;
   }
 
-  .site-header .nav-menu .icon {
+  .site-header .nav-menu .closeMenu {
     display: none;
+  }
+
+  .site-header .nav-menu .menu-list li {
+    margin: 10px;
   }
 
   .text {
@@ -704,15 +717,5 @@ footer {
   .work-container {
     width: 1150px;
     margin: 120px auto;
-  }
-}
-
-@keyframes slide {
-  from {
-    margin-top: 100%;
-  }
-
-  to {
-    margin-top: 0%;
   }
 }
