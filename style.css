@@ -94,6 +94,51 @@ footer .icon li img {
   width: 26px;
 }
 
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.modal-section .modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.modal-section .modal-btn a {
+  width: 134px;
+  height: 48px;
+  background: #ff6b00 ;
+  color: #fff;
+}
+
+.modal-section .modal-list {
+  display: flex;
+}
+
+.modal-section .modal-description p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-section .modal-img .modal-desk-img {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -373,7 +418,7 @@ footer .icon ul {
   margin-left: 12px;
 }
 
-.work-container .projects .project a.project-btn {
+.work-container .projects .project .project-btn {
   font-family: "Inter", serif;
   font-weight: bold;
   font-size: 17px;
