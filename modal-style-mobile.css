@@ -2,8 +2,8 @@
  .activeblur {
     filter: blur(4px);
   }
-  
-  @media only screen and (min-width: 977px) {
+ /**Mobile**/ 
+  @media only screen and (min-width: 1077px) {
   
   .modal-section .modal-languages {
     overflow: hidden;
@@ -43,6 +43,7 @@
     color: #fff;
     padding: 13px;
     margin: 10px 10px;
+    overflow: visible;
   }
   
   .modal-section .modal-list {
