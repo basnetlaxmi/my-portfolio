@@ -4,6 +4,10 @@
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 /* hamburger page section styling */
 .close-ham-img {
   float: right;
@@ -95,7 +99,7 @@ footer .icon li img {
 }
 
 .modal-section {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   align-items: center;
@@ -105,6 +109,22 @@ footer .icon li img {
   left: 0;
   z-index: 3;
   width: 100%;
+  margin-top: 45px;
+  padding: 5px;
+}
+
+.modal-section .modal-languages .modal-list li {
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  margin-right: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  width: 60px;
 }
 
 .modal-section .modal-title {
@@ -113,26 +133,34 @@ footer .icon li img {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
+  margin-bottom: 18px;
 }
 
 .modal-section .modal-btn a {
-  width: 134px;
-  height: 48px;
-  background: #ff6b00 ;
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #ff6b00;
   color: #fff;
+  padding: 13px;
+  margin: 6px 10px;
 }
 
 .modal-section .modal-list {
   display: flex;
 }
 
-.modal-section .modal-description p {
-  font-family: Inter;
+.modal-section .modal-description .desc {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  width: 311px;
+  height: 220px;
 }
 
 .modal-section .modal-img .modal-desk-img {

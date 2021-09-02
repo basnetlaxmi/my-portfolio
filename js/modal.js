@@ -23,7 +23,7 @@ const projectList = {
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
-    sourceCode: 'https://github.com/basnetlaxmi/my-portfolio '
+    sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
   fourthProject: {
@@ -65,6 +65,7 @@ const projects = [
 
 function modal(number) {
   const modalSection = document.querySelector('#modal');
+  modalSection.style.display = 'flex';
   const modalHeading = document.querySelector('.modal-title');
   const modalList = document.querySelector('.modal-list');
   modalList.innerHTML = '';
@@ -80,8 +81,11 @@ function modal(number) {
   }
 
   modalDesc.innerHTML = projects[number].description;
-  const closed = document.getElementById('#close-btn');
-  closed.addEventListener('click', modalSection.display.style = 'none');
 }
 
-modal(1);
+function toggle() {
+  const closed = document.querySelector('#close-btn');
+  closed.classList.toggle('hidden');
+}
+
+toggle();
