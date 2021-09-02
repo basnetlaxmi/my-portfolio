@@ -19,7 +19,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 95%;
+  height: 90%;
   width: 89%;
   padding: 0 0.5vh 0 2.5vh;
 }
@@ -62,11 +62,6 @@
 .modal-img {
   display: flex;
   grid-area: 3 / 1 / 4 / 2;
-  justify-content: space-around;
-}
-
-.modal-img > img {
-  margin-bottom: 1vh;
 }
 
 .modal-description {
@@ -86,6 +81,7 @@
 .modal-link {
   width: 16vh;
   height: 46px;
+  overflow: hidden;
 }
 
 .modal-img,
@@ -94,4 +90,8 @@
   margin-right: 5vh;
   margin-bottom: 1vh;
   margin-left: 1vh;
+}
+
+.seelive {
+  margin-right: 2vh;
 }
