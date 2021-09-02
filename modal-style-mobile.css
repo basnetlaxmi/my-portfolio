@@ -95,3 +95,35 @@
 .seelive {
   margin-right: 2vh;
 }
+
+@media only screen and (min-width: 750px) {
+  .modal-header {
+    margin-top: 2vh;
+    margin-right: 5vh;
+  }
+
+  .wraper-whole {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .modal-img {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .wrapper-p {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+
+  .modal-link {
+    width: auto;
+    height: auto;
+  }
+}

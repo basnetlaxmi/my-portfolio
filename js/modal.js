@@ -83,6 +83,8 @@ function modal(number) {
   }
 
   modalDesc.innerHTML = projects[number].description;
+  document.querySelectorAll('.modal-btn > a')[0].href = projects[number].liveServerbtn;
+  document.querySelectorAll('.modal-btn > a')[1].href = projects[number].sourceCode;
 }
 
 // eslint-disable-next-line no-unused-vars
