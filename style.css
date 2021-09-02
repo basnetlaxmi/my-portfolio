@@ -5,7 +5,7 @@
 }
 
 .hidden {
-  display: none;
+
 }
 
 /* hamburger page section styling */
@@ -98,73 +98,37 @@ footer .icon li img {
   width: 26px;
 }
 
+.closeX {
+  cursor: pointer;
+}
+
 .modal-section {
   display: none;
   flex-direction: column;
   position: fixed;
-  align-items: center;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 3;
+  padding: 2% 2% 2% 2%;
+  background: #FFFFFF;
+  border: 1px solid #EBECF0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  width: 80%;
+  height: 80%;
+  margin-top: 6%;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+.modal-header {
   width: 100%;
-  margin-top: 45px;
-  padding: 5px;
-}
-
-.modal-section .modal-languages .modal-list li {
-  padding: 10px 12px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  box-sizing: border-box;
-  margin-right: 12px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #3c3a39;
-  width: 60px;
-}
-
-.modal-section .modal-title {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 18px;
-}
-
-.modal-section .modal-btn a {
-  font-family: "Inter", serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 45px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background: #ff6b00;
-  color: #fff;
-  padding: 13px;
-  margin: 6px 10px;
-}
-
-.modal-section .modal-list {
   display: flex;
-}
-
-.modal-section .modal-description .desc {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  width: 311px;
-  height: 220px;
-}
-
-.modal-section .modal-img .modal-desk-img {
-  display: none;
+  justify-content: space-between;
+  height: 3.5rem;
+  color: #172B4D;
+  align-items: center;
 }
 
 .container {

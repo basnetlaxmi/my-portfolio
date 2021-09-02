@@ -1,16 +1,16 @@
-// eslint-disable-next-line no-unused-vars
+
 const projectList = {
   firstProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 1',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio '
 
-  },
+},
   secondProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 2',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -18,7 +18,7 @@ const projectList = {
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio '
   },
   thirdProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 3',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -27,7 +27,7 @@ const projectList = {
   },
 
   fourthProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 4',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -36,7 +36,7 @@ const projectList = {
   },
 
   fifthProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 5',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -45,7 +45,7 @@ const projectList = {
   },
 
   sixthProject: {
-    popupHeading: 'Multi-Post Stories',
+    popupHeading: 'Multi-Post Stories 6',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -62,17 +62,21 @@ const projects = [
   projectList.fifthProject,
   projectList.sixthProject,
 ];
-
+  
+  
 function modal(number) {
   const modalSection = document.querySelector('#modal');
   modalSection.style.display = 'flex';
+  document.querySelector('#portfolio').classList.add('activeblur');
+  document.querySelector('.about').classList.add('activeblur');
+  document.querySelector('*').style.overflow = 'hidden';
   const modalHeading = document.querySelector('.modal-title');
   const modalList = document.querySelector('.modal-list');
   modalList.innerHTML = '';
   const modalImg = document.querySelector('.modal-img');
   const modalDesc = document.querySelector('.modal-description');
-
-  modalHeading.innerHTML = projects[number].popupHeading;
+  
+  modalHeading.innerText = projects[number].popupHeading;
 
   for (let i = 0; i < projects[number].languages.length; i += 1) {
     const list = document.createElement('li');
@@ -81,11 +85,19 @@ function modal(number) {
   }
 
   modalDesc.innerHTML = projects[number].description;
+  
 }
 
-function toggle() {
-  const closed = document.querySelector('#close-btn');
-  closed.classList.toggle('hidden');
+function closeModal (){
+  document.querySelector('#modal').style.display="none";
+  document.querySelector('*').style.overflow = 'auto';
+  document.querySelector('#portfolio').classList.remove('activeblur');
+  document.querySelector('.about').classList.remove('activeblur');
 }
 
-toggle();
+// function toggle() {
+// const closed = document.querySelector('#close-btn');
+// closed.classList.toggle('hidden');
+// }
+// toggle();
+

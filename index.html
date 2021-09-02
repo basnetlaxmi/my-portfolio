@@ -125,12 +125,31 @@
                             no accounts or sign-ups required. has been the industry's standard
                         </p>
 
-                        <button class="project-btn" type="click" onclick="modal(1)">See project</button>
+                        <button class="project-btn" type="click" onclick="modal(0)">See project</button>
 
                     </div>
 
                     <div class="project">
                         <h2>Data Dashboard Healthcare</h2>
+                        <p>A daily selection of privately personalized reads
+                            no accounts or sign-ups required. has been the industry's standard
+                        </p>
+                        <div class="languages">
+
+                            <ul>
+                                <li class="project-language"> html
+                                <li>
+                                <li class="project-language">bootstrap
+                                <li>
+                                <li class="project-language"> Ruby
+                                <li>
+                            </ul>
+                        </div>
+                        <button class="project-btn" type="click" onclick="modal(1)">See project</button>
+
+                    </div>
+                    <div class="project">
+                        <h2>Profesional Art Printing Data</h2>
                         <p>A daily selection of privately personalized reads
                             no accounts or sign-ups required. has been the industry's standard
                         </p>
@@ -205,25 +224,6 @@
                         <button class="project-btn" type="click" onclick="modal(5)">See project</button>
 
                     </div>
-                    <div class="project">
-                        <h2>Profesional Art Printing Data</h2>
-                        <p>A daily selection of privately personalized reads
-                            no accounts or sign-ups required. has been the industry's standard
-                        </p>
-                        <div class="languages">
-
-                            <ul>
-                                <li class="project-language"> html
-                                <li>
-                                <li class="project-language">bootstrap
-                                <li>
-                                <li class="project-language"> Ruby
-                                <li>
-                            </ul>
-                        </div>
-                        <button class="project-btn" type="click" onclick="modal(6)">See project</button>
-
-                    </div>
 
 
                 </div>
@@ -233,26 +233,26 @@
 
             </section>
             <section class="modal-section" id="modal">
-                <div class="closeX" id="close-btn">
+                <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <a class="closeX" id="close-btn" onclick='closeModal()'>
                     <img src="./images/close.png" alt="close-icon"/>
-                </div>
-                <div class="modal-title">
-                    <h2 class="modal-heading"></h2>
-
-                </div>
+                </a>
+                   </div>
+            </div>
 
                 <div class="modal-languages">
                     <ul class="modal-list"></ul>
                 </div>
+                
                 <div class="modal-img">
-
                     <div class="modal-mb-img">
-                        <img id="prj-img" src="./images/mb-modal.png">
+                        <img id="prj-img" src="./images/desk-modal.png">
                     </div>
                     <div class="modal-desk-img">
                         <img src="./images/desk-modal.png" />
                     </div>
-                </div>
+                <div class="modal-desc-btn-wraper">
                 <div class="modal-description">
                     <p class="desc"></p>
                 </div>
@@ -260,6 +260,7 @@
                     <a href="#">See Live<img src="./images/seelive.svg"></a>
                     <a href="#">See Source<img src="./images/source.png"></a>
                 </div>
+            </div>
 
             </section>
             <section class="about" id="about">

@@ -1,0 +1,89 @@
+ /**.work-container, .about*/
+ .activeblur {
+    filter: blur(4px);
+  }
+  
+  @media only screen and (min-width: 977px) {
+  
+  .modal-section .modal-languages {
+    overflow: hidden;
+  }
+  
+  .modal-section .modal-languages .modal-list li {
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    box-sizing: border-box;
+    margin-right: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3c3a39;
+    margin-bottom: 35px;
+  
+  }
+  
+  .modal-section .modal-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+  .modal-section .modal-btn a {
+    font-family: "Inter", serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #ff6b00;
+    color: #fff;
+    padding: 13px;
+    margin: 10px 10px;
+  }
+  
+  .modal-section .modal-list {
+    display: flex;
+  }
+  
+  .modal-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-section .modal-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  
+  }
+  
+  #prj-img {
+    height: 99%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .modal-desc-btn-wraper {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .modal-section .modal-img .modal-desk-img {
+    display: none;
+  }
+  
+  }
