@@ -9,6 +9,6 @@ function store() {
   };
 
   localStorage.setItem('formData', JSON.stringify(data));
-}
+
 
 
