@@ -98,35 +98,6 @@ footer .icon li img {
   cursor: pointer;
 }
 
-.modal-section {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-  padding: 2% 2% 2% 2%;
-  background: #FFFFFF;
-  border: 1px solid #EBECF0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  width: 80%;
-  height: 80%;
-  margin-top: 6%;
-  margin-left: 10%;
-  overflow: hidden;
-}
-
-.modal-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 3.5rem;
-  color: #172B4D;
-  align-items: center;
-}
-
 .container {
   display: flex;
   flex-direction: column;

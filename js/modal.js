@@ -72,8 +72,11 @@ function modal(number) {
   const modalHeading = document.querySelector('.modal-title');
   const modalList = document.querySelector('.modal-list');
   modalList.innerHTML = '';
+<<<<<<< HEAD
   // eslint-disable-next-line no-unused-vars
   const modalImg = document.querySelector('.modal-img');
+=======
+>>>>>>> 2140e608134b71a0e909ee68d77052f21f8c98b1
   const modalDesc = document.querySelector('.modal-description');
 
   modalHeading.innerText = projects[number].popupHeading;
@@ -85,6 +88,11 @@ function modal(number) {
   }
 
   modalDesc.innerHTML = projects[number].description;
+<<<<<<< HEAD
+=======
+  document.querySelectorAll('.modal-btn > a')[0].href = projects[number].liveServerbtn;
+  document.querySelectorAll('.modal-btn > a')[1].href = projects[number].sourceCode;
+>>>>>>> 2140e608134b71a0e909ee68d77052f21f8c98b1
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -94,3 +102,12 @@ function closeModal() {
   document.querySelector('#portfolio').classList.remove('activeblur');
   document.querySelector('.about').classList.remove('activeblur');
 }
+<<<<<<< HEAD
+=======
+
+// function toggle() {
+// const closed = document.querySelector('#close-btn');
+// closed.classList.toggle('hidden');
+// }
+// toggle();
+>>>>>>> 2140e608134b71a0e909ee68d77052f21f8c98b1
