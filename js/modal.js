@@ -1,5 +1,5 @@
-const projectList = {
-  firstProject: {
+const projects = [
+  {
     popupHeading: 'Multi-Post Stories 1',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -8,7 +8,7 @@ const projectList = {
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
 
   },
-  secondProject: {
+  {
     popupHeading: 'Multi-Post Stories 2',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -16,7 +16,7 @@ const projectList = {
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
-  thirdProject: {
+  {
     popupHeading: 'Multi-Post Stories 3',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -25,7 +25,7 @@ const projectList = {
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  fourthProject: {
+  {
     popupHeading: 'Multi-Post Stories 4',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -34,7 +34,7 @@ const projectList = {
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  fifthProject: {
+  {
     popupHeading: 'Multi-Post Stories 5',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -43,7 +43,7 @@ const projectList = {
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  sixthProject: {
+  {
     popupHeading: 'Multi-Post Stories 6',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: 'images/mb-modal.png',
@@ -51,16 +51,32 @@ const projectList = {
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
-};
-
-const projects = [
-  projectList.firstProject,
-  projectList.secondProject,
-  projectList.thirdProject,
-  projectList.fourthProject,
-  projectList.fifthProject,
-  projectList.sixthProject,
 ];
+
+let iterationJ = 0;
+
+for (let i = 0; i < projects.length; i += 1) {
+  document.querySelectorAll('.project > .project-name')[i].innerText = projects[i].popupHeading;
+  document.querySelectorAll('.project > .project-desc')[i].innerText = projects[i].description;
+  for (let j = 0; j < projects[i].languages.length; j += 1) {
+    document.querySelectorAll('.project > .languages')[i].appendChild(document.createElement('li'));
+    // how many Li created
+    iterationJ += 1;
+  }
+}
+// Arry of languages props
+const projects2 = [];
+for (let i = 0; i < projects.length; i += 1) {
+  Object.values(projects[i].languages).forEach((val) => {
+    projects2.push(val);
+  });
+}
+
+// iterate through all the LI of the projects and add class
+for (let j = 16; j < 16 + iterationJ; j += 1) {
+  document.querySelectorAll('li')[j].classList.add('lang-btns');
+  document.querySelectorAll('li')[j].innerText = projects2[j - 16];
+}
 
 // eslint-disable-next-line no-unused-vars
 function modal(number) {
@@ -94,9 +110,3 @@ function closeModal() {
   document.querySelector('#portfolio').classList.remove('activeblur');
   document.querySelector('.about').classList.remove('activeblur');
 }
-
-// function toggle() {
-// const closed = document.querySelector('#close-btn');
-// closed.classList.toggle('hidden');
-// }
-// toggle();
