@@ -94,6 +94,10 @@ footer .icon li img {
   width: 26px;
 }
 
+.closeX {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -373,7 +377,7 @@ footer .icon ul {
   margin-left: 12px;
 }
 
-.work-container .projects .project a.project-btn {
+.work-container .projects .project .project-btn {
   font-family: "Inter", serif;
   font-weight: bold;
   font-size: 17px;

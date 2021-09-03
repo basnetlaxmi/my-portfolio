@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+form > .alertText {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 2%;
+  letter-spacing: 0.4px;
+  font-size: 15px;
+  background: #d01010;
+  border-radius: 8px;
+  padding: 7px;
+  padding-left: 35px;
+  color: white;
+  background-image: url(./images/alert.png);
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  background-size: 10%;
+}
