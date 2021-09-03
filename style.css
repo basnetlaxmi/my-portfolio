@@ -335,7 +335,7 @@ footer .icon ul {
   transition: transform 2s;
 }
 
-.work-container .projects .project h2 {
+.work-container .projects .project .project-name {
   font-family: "Crete Round", serif;
   font-weight: normal;
   font-size: 32px;
@@ -345,7 +345,7 @@ footer .icon ul {
   padding-left: 12px;
 }
 
-.work-container .projects .project p {
+.work-container .projects .project .project-desc {
   font-family: Inter, serif;
   font-weight: normal;
   font-size: 16px;
@@ -355,12 +355,12 @@ footer .icon ul {
   padding: 0 12px;
 }
 
-.work-container .projects .project .languages ul {
+.work-container .projects .project .languages .lanuguages-list {
   display: flex;
   justify-content: flex-start;
 }
 
-.work-container .projects .project .languages .project-language {
+.work-container .projects .project .languages li {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
