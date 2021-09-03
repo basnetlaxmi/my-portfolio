@@ -11,6 +11,7 @@ function showError() {
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
     showError();
+    emailError.classList.add('alertText');
     event.preventDefault();
   }
 });
