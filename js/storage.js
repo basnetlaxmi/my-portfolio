@@ -10,5 +10,18 @@ function store() {
 
   localStorage.setItem('formData', JSON.stringify(data));
 
+  
+  function preFill() {
+    const dataRetrieve = JSON.parse(localStorage.getItem('formData'));
+  
+    if (dataRetrieve) {
+      fullName.value = dataRetrieve.fname;
+      mail.value = dataRetrieve.email;
+    }
+  }
+  
+  submit.addEventListener('click', store, preFill);
+
+
 
 
