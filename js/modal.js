@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 function modal(number) {
   const modalSection = document.querySelector('#modal');

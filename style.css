@@ -749,10 +749,10 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
-.work-container .projects .project .languages .project-language {
+  .work-container .projects .project .languages .project-language {
     margin: 0 2px;
     padding: 10px;
-}
+  }
 
   .work-container h2.title::after {
     width: 620px;
