@@ -325,7 +325,6 @@ footer .icon ul {
 .work-container .projects .project {
   display: flex;
   flex-direction: column;
-  background-image: url("./images/prjimg.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 20px;
@@ -340,7 +339,7 @@ footer .icon ul {
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
-  color: #4f4f4f;
+  color: #fff;
   margin-bottom: 5px;
   padding-left: 12px;
 }
@@ -350,7 +349,7 @@ footer .icon ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #4d4d4d;
+  color: #fff;
   margin-bottom: 10px;
   padding: 0 12px;
 }
@@ -365,11 +364,11 @@ footer .icon ul {
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   box-sizing: border-box;
-  margin: 0 12px;
+  margin: 2%;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   color: #fff;
 }
 

@@ -1,66 +1,85 @@
-const projectList = {
-  firstProject: {
+const projects = [
+
+  {
     popupHeading: 'Multi-Post Stories 1',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
 
   },
-  secondProject: {
+  {
     popupHeading: 'Multi-Post Stories 2',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
-  thirdProject: {
+  {
     popupHeading: 'Multi-Post Stories 3',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  fourthProject: {
+  {
     popupHeading: 'Multi-Post Stories 4',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  fifthProject: {
+  {
     popupHeading: 'Multi-Post Stories 5',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
 
-  sixthProject: {
+  {
     popupHeading: 'Multi-Post Stories 6',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
-    images: 'images/mb-modal.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    images: './images/prjimg.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
   },
-};
 
-const projects = [
-  projectList.firstProject,
-  projectList.secondProject,
-  projectList.thirdProject,
-  projectList.fourthProject,
-  projectList.fifthProject,
-  projectList.sixthProject,
 ];
+
+let iterationJ = 0;
+
+for (let i = 1; i < projects.length; i += 1) {
+  document.querySelectorAll('.projects .project')[i].style.backgroundImage = `url(${projects[i].images})`;
+  document.querySelectorAll('.project > h2')[i].innerText = projects[i].popupHeading;
+  document.querySelectorAll('.project > p')[i].innerText = projects[i].description;
+  for (let j = 0; j < projects[i].languages.length; j += 1) {
+    document.querySelectorAll('.languages > ul')[i].appendChild(document.createElement('li'));
+    iterationJ += 1;
+  }
+}
+
+const projects2 = [];
+for (let i = 0; i < projects.length; i += 1) {
+  Object.values(projects[i].languages).forEach((val) => {
+    projects2.push(val);
+  });
+}
+
+for (let j = 16; j < 16 + iterationJ; j += 1) {
+  document.querySelectorAll('li')[j].classList.add('project-language');
+  document.querySelectorAll('li')[j].innerText = projects2[j - 16];
+}
+
+// Add buttons on click events using JS
 
 // eslint-disable-next-line no-unused-vars
 function modal(number) {
@@ -94,9 +113,3 @@ function closeModal() {
   document.querySelector('#portfolio').classList.remove('activeblur');
   document.querySelector('.about').classList.remove('activeblur');
 }
-
-// function toggle() {
-// const closed = document.querySelector('#close-btn');
-// closed.classList.toggle('hidden');
-// }
-// toggle();
