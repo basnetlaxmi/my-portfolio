@@ -1,19 +1,19 @@
-const fullName = document.getElementById('name');
-const mail = document.getElementById('email');
-const textArea = document.getElementById('textarea');
+const fullName = document.getElementById('name').value;
+const mail = document.getElementById('email').value;
+const textArea = document.getElementById('textarea').value;
 function store() {
   const data = {
-    fname: fullName.value,
-    email: mail.value,
-    textarea: textArea.value,
+    fname: fullName,
+    email: mail,
+    textarea: textArea,
   };
   localStorage.setItem('formData', JSON.stringify(data));
 }
 const dataRetrieve = JSON.parse(localStorage.getItem('formData'));
 if (dataRetrieve) {
-  fullName.value = dataRetrieve.fname;
-  mail.value = dataRetrieve.email;
-  textArea.value = dataRetrieve.textarea;
+  fullName = dataRetrieve.fname;
+  mail = dataRetrieve.email;
+  textArea = dataRetrieve.textarea;
 }
 // eslint-disable-next-line no-undef
 form.addEventListener('input', store);
