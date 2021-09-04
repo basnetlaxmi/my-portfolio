@@ -176,7 +176,7 @@ footer .icon li {
 .work-container {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 327px;
+  grid-template-columns: 350px;
   justify-content: center;
   gap: 2em;
   margin-top: 102px;
@@ -317,7 +317,7 @@ footer .icon ul {
 
 .work-container .projects {
   display: grid;
-  grid-template-columns: 320px;
+  grid-template-columns: 348px;
   justify-content: flex-end;
   align-items: center;
 }
@@ -325,6 +325,7 @@ footer .icon ul {
 .work-container .projects .project {
   display: flex;
   flex-direction: column;
+  background-image: url("./images/prjimg.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 20px;
@@ -364,11 +365,11 @@ footer .icon ul {
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   box-sizing: border-box;
-  margin: 2%;
+  margin: 0 3px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   color: #fff;
 }
 
@@ -748,9 +749,10 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
-  .work-container {
-    width: 991px;
-  }
+.work-container .projects .project .languages .project-language {
+    margin: 0 2px;
+    padding: 10px;
+}
 
   .work-container h2.title::after {
     width: 620px;
@@ -759,7 +761,7 @@ footer {
 
 @media (min-width: 1200px) {
   .work-container {
-    width: 1150px;
+    grid-template-columns: 1300px;
     margin: 120px auto;
   }
 }
