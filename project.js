@@ -1,29 +1,29 @@
 const projects = [
 
   {
-    popupHeading: 'Multi-Post Stories 1',
+    popupHeading: 'My Portfolio',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: './images/prjimg.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
+    liveServerbtn: 'hThis project is about a portfolio website using a reference of Figma design template. In this project, I have used HTML., CSS Flexbox, and JavaScript.ttps://basnetlaxmi.github.io/my-portfolio/',
     sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
 
   },
   {
-    popupHeading: 'Multi-Post Stories 2',
+    popupHeading: 'To-do-list',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: './images/prjimg.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
-    sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
+    description: 'This is my first project using Webpack in the Microverse. The objective was to build a to-do list where people can add, delete, edit and update their tasks',
+    liveServerbtn: 'https://basnetlaxmi.github.io/to-do-list-minimalist/',
+    sourceCode: 'https://github.com/basnetlaxmi/to-do-list-minimalist',
   },
   {
-    popupHeading: 'Multi-Post Stories 3',
+    popupHeading: 'WLIT Hackathon Website',
     languages: ['html', 'Bootstrap', 'Ruby on Rails'],
     images: './images/prjimg.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveServerbtn: 'https://basnetlaxmi.github.io/my-portfolio/',
-    sourceCode: 'https://github.com/basnetlaxmi/my-portfolio ',
+    liveServerbtn: 'https://basnetlaxmi.github.io/first-capstone-project/index.html',
+    sourceCode: 'https://github.com/basnetlaxmi/first-capstone-project',
   },
 
   {
